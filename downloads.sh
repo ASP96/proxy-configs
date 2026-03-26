@@ -14,7 +14,9 @@ wget -P ./result -O ./result/9.txt https://github.com/AvenCores/goida-vpn-config
 wget -P ./result -O ./result/26.txt https://github.com/AvenCores/goida-vpn-configs/raw/refs/heads/main/githubmirror/26.txt
 wget -P ./result -O ./result/25.txt https://github.com/AvenCores/goida-vpn-configs/raw/refs/heads/main/githubmirror/25.txt
 
-cat ./result/* | grep xhttp > xhttp.txt
+cat ./result/* | grep xhttp | head -n 250 > xhttp_all.txt
+cat ./result/* | grep xhttp | head -n 250 > xhttp.txt
+cat ./result/* | grep xhttp | tail -n 250 > xhttp_end.txt
 
 
 

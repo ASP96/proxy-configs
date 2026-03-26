@@ -17,6 +17,6 @@ wget -P ./result -O ./result/25.txt https://github.com/AvenCores/goida-vpn-confi
 cat ./result/* | grep xhttp | head -n 250 > xhttp_all.txt
 cat ./result/* | grep xhttp | head -n 250 > xhttp.txt
 cat ./result/* | grep xhttp | tail -n 250 > xhttp_end.txt
-
+cat ./result/* | grep xhttp | grep yandex > xhttp_yandex.txt
 
 
